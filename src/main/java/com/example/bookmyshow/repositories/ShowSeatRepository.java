@@ -1,15 +1,18 @@
 package com.example.bookmyshow.repositories;
 
-import com.example.bookmyshow.models.Show;
+import com.example.bookmyshow.models.*;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
 import java.util.Optional;
 
 @Repository
-public interface ShowRepository extends JpaRepository<Show,Long> {
-    @Override
-    Optional<Show> findById(Long aLong);
+public interface ShowSeatRepository extends JpaRepository<ShowSeat,Long> {
 
-    List<Show> 
+    @Override
+    List<ShowSeat> findAllById(Iterable<Long> showSeatIds);
+
+    @Override
+    ShowSeat save(ShowSeat entity);
 }

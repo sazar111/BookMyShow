@@ -1,8 +1,12 @@
 package com.example.bookmyshow.models;
 
+import jakarta.persistence.Entity;
 import lombok.Getter;
+import lombok.Setter;
 
 @Getter
-public class SeatType {
+@Setter
+@Entity
+public class SeatType extends BaseModel{
     String seatType;
 }

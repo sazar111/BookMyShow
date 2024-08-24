@@ -1,0 +1,14 @@
+>Create models
+>create mySql db with following commands
+create database bms;
+create user adhi;
+grant all privileges on bms to adhi
+
+>Google for Spring JPA mySql connector and get the application properties file
+spring.jpa.hibernate.ddl-auto=update
+spring.datasource.url=jdbc:mysql://localhost:3306/mydatabase
+spring.datasource.username=myuser
+spring.datasource.password=secret
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.jpa.show-sql: true
+

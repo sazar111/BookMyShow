@@ -1,2 +1,6 @@
-package com.example.bookmyshow.dtos;public class ResponseStatus {
+package com.example.bookmyshow.dtos;
+
+public enum ResponseStatus {
+    SUCCESS,
+    FAILURE
 }
